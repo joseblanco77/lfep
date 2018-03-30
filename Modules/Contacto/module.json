@@ -1,0 +1,17 @@
+{
+    "name": "Contacto",
+    "alias": "contacto",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Contacto\\Providers\\ContactoServiceProvider"
+    ],
+    "aliases": [],
+    "files": [
+        "Helpers/contacto.php",
+        "start.php"
+    ],
+    "requires": []
+}

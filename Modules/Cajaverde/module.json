@@ -1,0 +1,23 @@
+{
+    "name": "Cajaverde",
+    "alias": "cajaverde",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Cajaverde\\Providers\\EventServiceProvider",
+        "Modules\\Cajaverde\\Providers\\CajaverdeServiceProvider",
+        "Modules\\Cajaverde\\Providers\\ComposerServiceProvider",
+        "Modules\\Cajaverde\\Providers\\ObserverServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "Helpers/cajaverde.php",
+        "Helpers/dates.php",
+        "Helpers/general.php",
+        "Helpers/storage.php",
+        "start.php"
+    ],
+    "requires": []
+}

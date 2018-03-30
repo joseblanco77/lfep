@@ -1,0 +1,17 @@
+{
+    "name": "Paginas",
+    "alias": "paginas",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Paginas\\Providers\\PaginasServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "Helpers/paginas.php",
+        "start.php"
+    ],
+    "requires": []
+}

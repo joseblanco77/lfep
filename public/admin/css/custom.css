@@ -1,0 +1,25 @@
+
+/*
+Styling Form Inputs in CSS With :required, :optional, :valid and invalid
+https://alligator.io/css/styling-form-input-validity/
+*/
+input:optional {
+    border-left-color: #999;
+}
+input:required {
+    border-left-color: #4bcf99;
+}
+input:invalid {
+    border-left-color: #FF4444;
+}
+
+#modal-media .images-container .image-container.active {
+    border-color: rgba(133, 206, 54, 0.5);
+    border-width: 3px;
+    padding: 1px;
+}
+
+.dz-preview.dz-complete.active {
+    border: solid 3px rgba(133, 206, 54, 0.5);
+    border-radius: 20px;
+}

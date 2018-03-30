@@ -1,0 +1,71 @@
+Revisar siempre
+https://github.com/laravel/framework/releases/
+Actual: Laravel 5.5.36
+
+
+Laravel-Modules
+composer require nwidart/laravel-modules
+- repo:     https://github.com/nWidart/laravel-modules
+- docs:     https://nwidart.com/laravel-modules/v2/introduction
+- article:  https://nicolaswidart.com/blog/writing-modular-applications-with-laravel-modules
+
+
+Laravel Debugbar    
+composer require barryvdh/laravel-debugbar --dev
+- repo: https://github.com/barryvdh/laravel-debugbar
+
+
+Forms & HTML - Laravel Collective
+composer require "laravelcollective/html":"^5.4.0"
+- site: https://laravelcollective.com/docs/master/html
+
+
+Prettus Laravel 5 repositories
+composer require prettus/l5-repository
+- repo: https://github.com/andersao/l5-repository
+- site: https://packagist.org/packages/prettus/l5-repository
+
+
+Doctrine Database Abstraction Layer
+«Before modifying a column, be sure to add the doctrine/dbal dependency to your composer.json file. 
+The Doctrine DBAL library is used to determine the current state of the column and create the SQL 
+queries needed to make the specified adjustments to the column:»
+composer require doctrine/dbal
+- repo: https://github.com/doctrine/dbal
+- site: http://www.doctrine-project.org/projects/dbal.html
+
+
+Carbon - A simple API extension for DateTime.
+composer require nesbot/carbon
+- repo: https://github.com/briannesbitt/Carbon
+- site: http://carbon.nesbot.com/
+- docs: http://carbon.nesbot.com/docs/
+
+
+Associate users with permissions and roles
+composer require spatie/laravel-permission
+- repo: https://github.com/spatie/laravel-permission
+- article: https://murze.be/a-package-to-add-roles-and-permissions-to-laravel
+- GUI tutorial: https://scotch.io/tutorials/user-authorization-in-laravel-54-with-spatie-laravel-permission
+
+
+Laravel 5 log viewer
+composer require rap2hpoutre/laravel-log-viewer
+- repo: https://github.com/rap2hpoutre/laravel-log-viewer
+
+
+Laravel Nested Set - Effective tree structures in Laravel 4-5 
+composer require kalnoy/nestedset
+- repo: https://github.com/lazychaser/laravel-nestedset
+
+
+Intervention Image
+composer require intervention/image
+- repo: https://github.com/Intervention/image
+- docs: http://image.intervention.io/
+
+
+Yajra Laravel DataTables
+composer require yajra/laravel-datatables-oracle:^8.0
+- repo: https://github.com/yajra/laravel-datatables
+- docs: https://yajrabox.com/docs/laravel-datatables/

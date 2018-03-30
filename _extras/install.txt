@@ -1,0 +1,10 @@
+php artisan migrate:fresh
+
+php artisan module:seed Cajaverde
+php artisan cajaverde:user-permissions-seeder
+
+php artisan module:seed Paginas
+php artisan cajaverde:paginas-permissions-seeder
+
+php artisan module:seed Contacto
+php artisan cajaverde:Contacto-permissions-seeder

@@ -1,0 +1,2 @@
+Eliminar public/admin/assets ASAP
+Poner títulos en las vistas y layout de cajaverde
