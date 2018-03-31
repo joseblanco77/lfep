@@ -10,7 +10,7 @@
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="{{ asset('admin/css/vendor.css') }}">
         <!-- Theme initialization -->
-        <link rel="stylesheet" href="{{ asset('admin/css/app-blue.css') }}">
+        <link rel="stylesheet" href="{{ asset('admin/css/app.css') }}">
     </head>
     <body>
         <div class="auth">

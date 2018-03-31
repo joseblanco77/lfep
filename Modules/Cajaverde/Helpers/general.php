@@ -68,3 +68,29 @@ if (!function_exists('printIfRequestIn') ) {
         return $default;
     }
 }
+
+if (!function_exists('setMetaTags') ) {
+    /**
+     * Recibe un arreglo y lo inyecta en la vista de metas para el template
+     *
+     * @param Array $tags
+     * @return \Illuminate\View\View
+     */
+    function setMetaTags(Array $tags) 
+    {
+        return view('cajaverde::layouts.meta')->with(compact('tags'));
+    }
+}
+
+if (!function_exists('showMetasForm') ) {
+    /**
+     * Recibe un arreglo e inyecta en un formulario para administrar meta tags
+     *
+     * @param Array $tags
+     * @return \Illuminate\View\View
+     */
+    function showMetasForm(Array $tags) 
+    {
+        return view('cajaverde::utilities.metas')->with(compact('tags'));
+    }
+}

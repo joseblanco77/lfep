@@ -5,7 +5,7 @@
 <div class="card">
     <header class="auth-header">
         <h1 class="auth-title">
-            <img height="50px" src="{{ asset('img/mdw.png') }}">
+            <img height="50px" src="{{ asset('img/logo_perinola.svg') }}">
         </h1>
     </header>
 
