@@ -10,7 +10,7 @@
         <link rel="icon" type="image/png" href="{{ asset('admin/img/favicon.png') }}">
         <link rel="apple-touch-icon" href="{{ asset('admin/img/favicon.png') }}">
         <link rel="stylesheet" href="{{ asset('admin/css/vendor.css') }}">
-        <link rel="stylesheet" href="{{ asset('admin/css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('admin/css/app-blue.css') }}">
         <link rel="stylesheet" href="{{ asset('admin/css/custom.css') }}">
         @yield('headlinks')
     </head>
