@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title> ModularAdmin - Free Dashboard Theme | HTML Version </title>
+        <title> MakingDaWeb </title>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -38,7 +38,7 @@
             </div>
         </div>
         <script src="{{ asset('admin/js/vendor.js') }}"></script>
-        <script src="{{ asset('admin/js/app.js') }}"></script>
+        <script src="{{ asset('admin/js/app-blue.js') }}"></script>
         <script src="{{ asset('admin/js/custom.js') }}"></script>
         @yield('footscripts')
     </body>

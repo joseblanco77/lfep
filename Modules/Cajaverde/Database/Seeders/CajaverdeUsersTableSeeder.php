@@ -19,11 +19,11 @@ class CajaverdeUsersTableSeeder extends Seeder
 
         CajaverdeUser::create(
             [
-                'nombre' => 'Soporte',
-                'apellido' => 'Perinola',
-                'email' => 'soporte@grupoperinola.com',
-                'password' => 'lAbs_124215@3',
-                'descripcion' => 'Usuario administrativo de Grupo Perinola',
+                'nombre' => 'Victor',
+                'apellido' => 'Suchite',
+                'email' => 'suchitevictor@yahoo.es',
+                'password' => 'Guate@1965',
+                'descripcion' => 'Propietario del sitio',
                 'activo' => 1,
             ]
         );
@@ -32,20 +32,9 @@ class CajaverdeUsersTableSeeder extends Seeder
             [
                 'nombre' => 'José',
                 'apellido' => 'Blanco',
-                'email' => 'jose.blanco@grupoperinola.com',
-                'password' => 'lAbs_124215@3',
-                'descripcion' => 'Chatío encargado de inyectar bugs y luego corregirlos.',
-                'activo' => 1,
-            ]
-        );
-
-        CajaverdeUser::create(
-            [
-                'nombre' => 'Javier',
-                'apellido' => 'Meza',
-                'email' => 'javier.meza@grupoperinola.com',
-                'password' => 'lAbs_124215@3',
-                'descripcion' => 'Usuario de prueba con permisos variables y muchas restricciones.',
+                'email' => 'joseblanco77@gmail.com',
+                'password' => 'jBlanco$$12',
+                'descripcion' => 'Desarrolador del sitio.',
                 'activo' => 1,
             ]
         );

@@ -40,16 +40,14 @@ class UserPermissionsSeeder extends Command
      */
     public function handle()
     {
-        $adminPaginas = CajaverdeUser::where('email', 'soporte@grupoperinola.com')->first();
+        $adminPaginas = CajaverdeUser::where('email', 'suchitevictor@yahoo.es')->first();
         $adminPaginas->assignRole('admin_paginas');
-        
         $this->info('Permisos adminPaginas asignados al usuario ' . $adminPaginas->email);
 
-        $editPaginas = CajaverdeUser::where('email', 'jose.blanco@grupoperinola.com')->first();
-        $editPaginas->assignRole('editor_paginas');
-        
-        $this->info('Permisos editPaginas asignados al usuario ' . $editPaginas->email);
-        
+        $adminPaginas = CajaverdeUser::where('email', 'joseblanco77@gmail.com')->first();
+        $adminPaginas->assignRole('admin_paginas');
+        $this->info('Permisos adminPaginas asignados al usuario ' . $adminPaginas->email);
+      
 
     }
 

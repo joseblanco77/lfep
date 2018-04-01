@@ -8,6 +8,7 @@
     'meta_description' => isset($pagina->meta_description) ? $pagina->meta_description : null,
     'meta_author' => isset($pagina->meta_author) ? $pagina->meta_author : null,
     'og_image' => isset($pagina->og_image) ? $pagina->og_image : null,
+    'og_url' => url()->current(),
 ]) !!}
 @stop
 

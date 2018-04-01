@@ -40,15 +40,13 @@ class UserPermissionsSeeder extends Command
      */
     public function handle()
     {
-        $adminUsuarios = CajaverdeUser::where('email', 'soporte@grupoperinola.com')->first();
+        $adminUsuarios = CajaverdeUser::where('email', 'suchitevictor@yahoo.es')->first();
         $adminUsuarios->assignRole(['admin_usuarios', 'admin_roles', 'admin_permisos']);
-        //$adminUsuarios->syncRoles(['admin_usuarios', 'admin_roles', 'admin_permisos']); 
         $this->info('Permisos adminUsuarios asignados al usuario ' . $adminUsuarios->email);
         
-        $editUsuarios = CajaverdeUser::where('email', 'jose.blanco@grupoperinola.com')->first();
-        $editUsuarios->assignRole(['editor_usuarios', 'editor_roles', 'editor_permisos']);
-        //$editUsuarios->syncRoles(['editor_usuarios', 'editor_roles', 'editor_permisos']); 
-        $this->info('Permisos editUsuarios asignados al usuario ' . $editUsuarios->email);
+        $adminUsuarios = CajaverdeUser::where('email', 'joseblanco77@gmail.com')->first();
+        $adminUsuarios->assignRole(['admin_usuarios', 'admin_roles', 'admin_permisos']);
+        $this->info('Permisos adminUsuarios asignados al usuario ' . $adminUsuarios->email);
         
     }
 
