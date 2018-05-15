@@ -1,0 +1,112 @@
+/* CSS File */
+body {
+  background: #fafafa;
+}
+/* Base */
+a {
+  color: #fa690f;
+}
+a:hover {
+  color: #ff934f
+}
+.btn-outline-primary {
+  color: #fa690f;
+  background-color: transparent;
+  background-image: none;
+  border-color: #fa690f;
+}
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #fa690f;
+  border-color: #fa690f;
+}
+/* Header */
+header {
+  padding-bottom: 15px;
+  background: #fff;
+}
+.logo img {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+}
+.nav {
+  margin-top: 66px;
+}
+.nav a.nav-link {
+  font-size: 0.99rem;
+  color: #202020;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: #fa690f;
+}
+/* Slide */
+#slide {
+  padding-bottom: 3rem;
+}
+/* blogCards */
+#blogCards .row {
+  margin-bottom: 3rem;
+}
+#blogCards h1 {
+  font-weight: 300;
+  border-bottom: 1px solid #ababab;
+  margin-bottom: 15px;
+}
+
+/* blogAdvice */
+.answerTitle {
+  margin-bottom: 5px;
+}
+.answerTitle a {
+  font-weight: 300;
+}
+
+/* askAnything */
+#askAnything {
+  background: #404040;
+  padding: 50px 0;
+}
+#askAnything h1 {
+  color: #fff;
+  font-weight: 300;
+}
+#askAnything h2 {
+  color: #f0f0f0;
+  font-weight: 300;
+  width: 50%;
+  font-size: 1.7rem;
+  margin: 0 auto;
+}
+
+/* Blog Post */
+blockquote.blockquote {
+  font-size: 1.05em;
+  line-height: 1.7em;
+  border-color: #999;
+  border: 1px solid #eee;
+  border-left: 6px solid #eee;
+  padding: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 30px;
+}
+.blockquote-footer p:not(.lead) {
+  font-size: 1em;
+  line-height: 1.7em;
+  color: #555;
+}
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+  color: #6c757d;
+}
+/* Footer */
+.blog-footer {
+  margin: 2.5rem 0;
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  border-top: .05rem solid #e5e5e5;
+}
