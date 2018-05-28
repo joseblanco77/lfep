@@ -7,6 +7,7 @@
   <title>La Familia Es Prioridad</title>
   <link rel="stylesheet" href="{{ asset('lfep/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ asset('lfep/style.css') }}">
+  @yield('headlinks')
 </head>
 <body>
   <header>
@@ -82,109 +83,8 @@
     </div>
   </header>
   <main role="main">
-    <section id="slide" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#slide" data-slide-to="0" class="active"></li>
-        <li data-target="#slide" data-slide-to="1"></li>
-        <li data-target="#slide" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="{{ asset('lfep/imgs/slide/1') }}.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="{{ asset('lfep/imgs/slide/2') }}.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="{{ asset('lfep/imgs/slide/3') }}.jpg" alt="Third slide">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#slide" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#slide" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </section>
-    <section id="blogCards" class="container">
-      <div class="row">
-        <h1 class="col-12">Artículos</h1>
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="{{ asset('lfep/imgs/art1.jpg') }}">
-            <div class="card-body">
-              <h5 class="card-title"><a href="#">Niños Mentirosos</a></h5>
-              <p class="card-text">Te va a crecer la nariz como a Pinocho si sigues diciendo mentiras. ¿Le ha dicho usted eso a su hijo...</p>
-              <div class="d-flex justify-content-end align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Leer más...</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="{{ asset('lfep/imgs/art3.jpg') }}">
-            <div class="card-body">
-              <h5 class="card-title"><a href="#">Dejar limpio y ordenado lo que se ensució o usó</a></h5>
-              <p class="card-text">¿Conoce usted personas que tienen el mal hábito de dejar sucio el lugar o las cosas que usaron en una casa? Por ejemplo: Usan trastos...</p>
-              <div class="d-flex justify-content-end align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Leer más...</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card mb-4 box-shadow">
-            <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="{{ asset('lfep/imgs/art2.jpg') }}">
-            <div class="card-body">
-              <h5 class="card-title"><a href="#">El Legado Educativo</a></h5>
-              <p class="card-text">¿Qué es un legado? En simples palabras, un legado es algo que se deja o se transmite a otras personas. Puede tratarse de bienes...</p>
-              <div class="d-flex justify-content-end align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Leer más...</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 text-right">
-          <a href="#">Leer todos</a>
-        </div>
-      </div>
-      <div class="row">
-        <h1 class="col-12">Pregunta Del Mes</h1>
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <h3 class="answerTitle">
-                <a class="text-dark" href="#">Abril</a>
-              </h3>
-              <p class="card-text mb-auto">Pastor Víctor Súchite, quisiera saber: ¿Por qué mi hijo se comporta mal? ¿Por qué manifiesta siempre una conducta negativa o algún trastorno de conducta?</p>
-              <a href="#" class="answerLink">Leer la respuesta</a>
-            </div>
-            <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" style="width: auto; height: 250px;" src="{{ asset('lfep/imgs/consejero.jpg') }}" data-holder-rendered="true">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card flex-md-row mb-4 box-shadow h-md-250">
-            <div class="card-body d-flex flex-column align-items-start">
-              <h3 class="answerTitle">
-                <a class="text-dark" href="#">Mayo</a>
-              </h3>
-              <p class="card-text mb-auto">Pastor Víctor Súchite, quisiera saber: ¿Por qué mi hijo se comporta mal? ¿Por qué manifiesta siempre una conducta negativa o algún trastorno de conducta?</p>
-              <a href="#" class="answerLink">Leer la respuesta</a>
-            </div>
-            <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" style="width: auto; height: 250px;" src="{{ asset('lfep/imgs/consejero.jpg') }}" data-holder-rendered="true">
-          </div>
-        </div>
-      </div>
-    </section>
+      @include('pagelets.slide')
+    @yield('content')
     <section id="askAnything">
       <div class="container">
         <div class="row">
@@ -208,5 +108,6 @@
   <script src="{{ asset('lfep/jquery-3.3.1.slim.min.js') }}"></script>
   <script src="{{ asset('lfep/popper.min.js') }}"></script>
   <script src="{{ asset('lfep/bootstrap.min.js') }}"></script>
+  @yield('footscripts')
 </body>
 </html>

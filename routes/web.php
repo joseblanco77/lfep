@@ -12,8 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
+
+Route::get('articulos',        'PostController@index')->name('articulos');
+Route::get('articulos/{slug}', 'PostController@show')->name('articulo');
 
 /*
 |--------------------------------------------------------------------------
