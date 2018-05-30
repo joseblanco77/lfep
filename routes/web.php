@@ -11,12 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('articulos',        'PostController@index')->name('articulos');
 Route::get('articulos/{slug}', 'PostController@show')->name('articulo');
+
+Route::get('preguntas',        'QuestionController@index')->name('preguntas');
+Route::get('preguntas/{slug}', 'QuestionController@show')->name('pregunta');
 
 /*
 |--------------------------------------------------------------------------

@@ -14,7 +14,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-3 logo">
-          <a href="#"><img src="{{ asset('lfep/imgs/logo.jpg') }}" alt=""></a>
+          <a href="{{ route('home') }}"><img src="{{ asset('lfep/imgs/logo.jpg') }}" alt=""></a>
         </div>
         <nav class="col12 col-md-9 navbar navbar-expand-lg">
           <div class="navbar-header">
