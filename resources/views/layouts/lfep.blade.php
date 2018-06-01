@@ -1,3 +1,9 @@
+@php
+$audios       = itemsPortada('audio');
+$somos        = itemsPortada('somos');
+$capsula      = itemsPortada('capsula');
+$conferencias = itemsPortada('conferencias');
+@endphp
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,53 +33,34 @@
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">¿Quienes Somos?</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Biografía del fundador</a>
-                  <a class="dropdown-item" href="#">Principios Doctrinales</a>
+                        @foreach($somos as $item)
+                        <a class="dropdown-item" href="{{ route('somos', $item->slug) }}">{{ $item->title }}</a>
+                        @endforeach
                 </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cápsula Radial</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">¿Por qué un programa para la familia?</a>
-                  <a class="dropdown-item" href="#">¿Por qué un micro programa o cápsula radial?</a>
-                  <a class="dropdown-item" href="#">¿Por qué se necesita producir La Familia es Prioridad?</a>
-                  <a class="dropdown-item" href="#">¿Cómo puedo ser parte del proyecto?</a>
+                        @foreach($capsula as $item)
+                        <a class="dropdown-item" href="{{ route('capsula', $item->slug) }}">{{ $item->title }}</a>
+                        @endforeach
                 </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Conferencias y Seminarios</a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Cenas de Parejas</a>
-                  <a class="dropdown-item" href="#">Predicaciones sobre la familia</a>
-                  <a class="dropdown-item" href="#">¿Cómo puedo tener un evento?</a>
-                  <a class="dropdown-item" href="#">¿Cómo puedo ser parte del proyecto?</a>
+                    @foreach($conferencias as $item)
+                    <a class="dropdown-item" href="{{ route('conferencias', $item->slug) }}">{{ $item->title }}</a>
+                    @endforeach
                 </div>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Programas para Emisoras</a>
                 <div class="dropdown-menu">
                   <a class="dropdown-item" href="#">Solicitud de inscripción</a>
-                  <a class="dropdown-item" href="#">Matrimonios</a>
-                  <a class="dropdown-item" href="#">Vida Familiar</a>
-                  <a class="dropdown-item" href="#">Paternidad Responsable</a>
-                  <a class="dropdown-item" href="#">Desafíos de la Familia Contemporanea</a>
-                  <a class="dropdown-item" href="#">Ellas y ellos, contrarios pero complementarios</a>
-                  <a class="dropdown-item" href="#">La familia que administra bien sus finanzas</a>
-                  <a class="dropdown-item" href="#">Proverbios antiguos para familias modernas</a>
-                  <a class="dropdown-item" href="#">Errores que debemos evitar los padres</a>
-                  <a class="dropdown-item" href="#">Errores que debemos evitar en el matrimonio</a>
-                  <a class="dropdown-item" href="#">Etapas naturales de la vida familiar</a>
-                  <a class="dropdown-item" href="#">Adicciones</a>
-                  <a class="dropdown-item" href="#">Hábitos</a>
-                  <a class="dropdown-item" href="#">Refranes aplicados a la vida familiar</a>
-                  <a class="dropdown-item" href="#">Superando las crisis familiares</a>
-                  <a class="dropdown-item" href="#">Sexualidad</a>
-                  <a class="dropdown-item" href="#">Heridas</a>
-                  <a class="dropdown-item" href="#">Cantares, un canto al amor conyugal</a>
-                  <a class="dropdown-item" href="#">Cenas de Parejas</a>
-                  <a class="dropdown-item" href="#">Predicaciones sobre la familia</a>
-                  <a class="dropdown-item" href="#">¿Cómo puedo tener un evento?</a>
-                  <a class="dropdown-item" href="#">¿Cómo puedo ser parte del proyecto?</a>
+                  @foreach($audios as $item)
+                  <a class="dropdown-item" href="{{ route('audio', $item->slug) }}">{{ $item->title }}</a>
+                  @endforeach
                 </div>
               </li>
             </ul>

@@ -19,7 +19,9 @@ class QuestionController extends Controller
     {
         $post = Question::where('slug', $slug)->first();
 
+        $sidebar = Question::where('slug', '!=', $slug)->orderBy('id', 'desc')->take(10)->get(['title', 'slug']);
+
         return view('pregunta')
-            ->with(compact('post'));
+            ->with(compact('post', 'sidebar'));
     }
 }

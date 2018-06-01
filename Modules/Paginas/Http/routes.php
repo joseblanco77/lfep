@@ -21,6 +21,6 @@ Route::group(['middleware' => ['web', 'auth:cajaverde'], 'prefix' => 'admin', 'n
 
 });
 
-Route::group(['middleware' => ['web']], function() {
-    Route::get('{slug}.html', 'Modules\Paginas\Http\Controllers\DisplayController@show')->name('cajaverde.paginas.display');
-});
+// Route::group(['middleware' => ['web']], function() {
+//     Route::get('{slug}.html', 'Modules\Paginas\Http\Controllers\DisplayController@show')->name('cajaverde.paginas.display');
+// });

@@ -19,6 +19,11 @@ Route::get('articulos/{slug}', 'PostController@show')->name('articulo');
 Route::get('preguntas',        'QuestionController@index')->name('preguntas');
 Route::get('preguntas/{slug}', 'QuestionController@show')->name('pregunta');
 
+Route::get('audio/{slug}',        'ContentController@audio')->name('audio');
+Route::get('capsula/{slug}',      'ContentController@capsula')->name('capsula');
+Route::get('somos/{slug}',        'ContentController@somos')->name('somos');
+Route::get('conferencias/{slug}', 'ContentController@conferencias')->name('conferencias');
+
 /*
 |--------------------------------------------------------------------------
 | Cajaverde Auth Routes

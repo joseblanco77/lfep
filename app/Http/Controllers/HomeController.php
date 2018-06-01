@@ -27,6 +27,9 @@ class HomeController extends Controller
         $posts    = postsPortada();
         
         return view('home')
-            ->with(compact('question', 'posts'));
+            ->with(compact(
+                'question', 
+                'posts'
+            ));
     }
 }

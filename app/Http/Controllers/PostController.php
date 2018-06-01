@@ -19,7 +19,9 @@ class PostController extends Controller
     {
         $post = Post::where('slug', $slug)->first();
 
+        $sidebar = Post::where('slug', '!=', $slug)->where('subtitle', $post->subtitle)->get(['title', 'slug']);
+
         return view('articulo')
-            ->with(compact('post'));
+            ->with(compact('post', 'sidebar'));
     }
 }
