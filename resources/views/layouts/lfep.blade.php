@@ -25,7 +25,7 @@ $conferencias = itemsPortada('conferencias');
         <nav class="col12 col-md-9 navbar navbar-expand-lg">
           <div class="navbar-header">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span class="navbar-toggler-icon" style="background-image:url(https://cdn4.iconfinder.com/data/icons/tupix-1/30/list-128.png)"></span>
             </button>
           </div>
           <div class="collapse navbar-collapse justify-content-end" id="navbar">
