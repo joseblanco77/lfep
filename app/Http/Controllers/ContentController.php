@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Content;
+use App\Question;
 use Illuminate\Http\Request;
 
 class ContentController extends Controller
@@ -45,5 +46,31 @@ class ContentController extends Controller
 
         return view('conferencias')
             ->with(compact('item', 'sidebar'));
+    }
+
+    public function video()
+    {
+        $item = Content::where('type', 'video')->first();
+
+        $sidebar = Content::where('type', 'conferencias')->orderBy('id', 'desc')->get(['title', 'slug']);
+
+        return view('video')
+            ->with(compact('item', 'sidebar'));
+    }
+
+    public function fotos()
+    {
+        $sidebar = Content::where('type', 'audio')->orderBy('id', 'desc')->take(10)->get(['title', 'slug']);
+
+        return view('fotos')
+            ->with(compact('sidebar'));
+    }
+
+    public function orientador()
+    {
+        $sidebar = Question::orderBy('id', 'desc')->take(10)->get(['title', 'slug']);
+
+        return view('orientador')
+            ->with(compact('sidebar'));
     }
 }

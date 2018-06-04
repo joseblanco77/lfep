@@ -23,6 +23,9 @@ Route::get('audio/{slug}',        'ContentController@audio')->name('audio');
 Route::get('capsula/{slug}',      'ContentController@capsula')->name('capsula');
 Route::get('somos/{slug}',        'ContentController@somos')->name('somos');
 Route::get('conferencias/{slug}', 'ContentController@conferencias')->name('conferencias');
+Route::get('video',               'ContentController@video')->name('video');
+Route::get('fotos',               'ContentController@fotos')->name('fotos');
+Route::get('orientador',          'ContentController@orientador')->name('orientador');
 
 /*
 |--------------------------------------------------------------------------

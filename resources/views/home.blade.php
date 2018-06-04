@@ -27,10 +27,11 @@
           </div>
         </div>
         <div class="row">
-          <h1 class="col-12">Pregunta Del Mes</h1>
           <div class="col-md-6">
+              <h1>Pregunta Del Mes</h1>
             <div class="card flex-md-row mb-4 box-shadow h-md-250">
               <div class="card-body d-flex flex-column align-items-start">
+
                 <h3 class="answerTitle">
                   <a class="text-dark" href="{{ route('pregunta', $question->slug) }}">{{ ucfirst($question->created_at->format('F')) }}</a>
                 </h3>
@@ -44,14 +45,41 @@
                 <a href="{{ route('preguntas') }}">Leer todas</a>
               </div>
           </div>
+
+          <div class="col-md-6">
+              <h1>Videos</h1>
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h3 class="answerTitle">
+                  <a class="text-dark" href="{{ route('video') }}">Conferencias en video</a>
+                </h3>
+                <p class="card-text mb-auto">Extractos de las conferencias "Consejos para fortalecer su matrimonio" y "Excelencia en la Familia".</p>
+                <a href="{{ route('video') }}" class="answerLink">Ver vídeos</a>
+              </div>
+              <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" style="width: auto; height: 200px;" src="{{ asset('lfep/imgs/conferencias.png') }}" data-holder-rendered="true">
+            </div>
+          </div>
+          <div class="col-md-6">
+                
+            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+              <div class="card-body d-flex flex-column align-items-start">
+                <h3 class="answerTitle">
+                  <a class="text-dark" href="{{ route('fotos') }}">Fotos</a>
+                </h3>
+                <p class="card-text mb-auto">Galería de imágenes del Pastor Víctor Súchite.</p>
+                <a href="{{ route('fotos') }}" class="answerLink">Ver fotos</a>
+              </div>
+              <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" style="width: auto; height: 250px;" src="{{ asset('images/fotos/15.jpg') }}" data-holder-rendered="true">
+            </div>
+          </div>
           <div class="col-md-6">
             <div class="card flex-md-row mb-4 box-shadow h-md-250">
               <div class="card-body d-flex flex-column align-items-start">
                 <h3 class="answerTitle">
-                  <a class="text-dark" href="#">Mayo</a>
+                  <a class="text-dark" href="{{ route('orientador') }}">El orientador familiar</a>
                 </h3>
-                <p class="card-text mb-auto">Pastor Víctor Súchite, quisiera saber: ¿Por qué mi hijo se comporta mal? ¿Por qué manifiesta siempre una conducta negativa o algún trastorno de conducta?</p>
-                <a href="#" class="answerLink">Leer la respuesta</a>
+                <p class="card-text mb-auto">El Escritor y Consejero Familiar Víctor Súchite, obtuvo su Profesorado en Biblia en el Seminario Teológico Centroamericano SETECA de Guatemala...</p>
+                <a href="{{ route('orientador') }}" class="answerLink">Leer más</a>
               </div>
               <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" style="width: auto; height: 250px;" src="{{ asset('lfep/imgs/consejero.jpg') }}" data-holder-rendered="true">
             </div>
