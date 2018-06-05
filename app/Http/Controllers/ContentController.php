@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Content;
 use App\Question;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class ContentController extends Controller
 {
@@ -72,5 +73,14 @@ class ContentController extends Controller
 
         return view('orientador')
             ->with(compact('sidebar'));
+    }
+
+    public function descargar($file)
+    {
+        $headers = [
+            'Content-Type: application/pdf',
+        ];
+
+        return response()->file(public_path('files/'.$file), $headers);
     }
 }

@@ -76,10 +76,10 @@
             <div class="card flex-md-row mb-4 box-shadow h-md-250">
               <div class="card-body d-flex flex-column align-items-start">
                 <h3 class="answerTitle">
-                  <a class="text-dark" href="{{ route('orientador') }}">El orientador familiar</a>
+                  <a class="text-dark" href="{{ route('descargar', 'el-credo-del-matrimonio-y-la-familia.pdf') }}" target="_blank">PDF gratuito</a>
                 </h3>
-                <p class="card-text mb-auto">El Escritor y Consejero Familiar Víctor Súchite, obtuvo su Profesorado en Biblia en el Seminario Teológico Centroamericano SETECA de Guatemala...</p>
-                <a href="{{ route('orientador') }}" class="answerLink">Leer más</a>
+                <p class="card-text mb-auto">El credo del matrimonio y la familia.</p>
+                <a href="{{ route('descargar', 'el-credo-del-matrimonio-y-la-familia.pdf') }}" target="_blank" class="answerLink">Descargar</a>
               </div>
               <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" style="width: auto; height: 250px;" src="{{ asset('lfep/imgs/consejero.jpg') }}" data-holder-rendered="true">
             </div>

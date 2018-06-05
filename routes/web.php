@@ -26,6 +26,7 @@ Route::get('conferencias/{slug}', 'ContentController@conferencias')->name('confe
 Route::get('video',               'ContentController@video')->name('video');
 Route::get('fotos',               'ContentController@fotos')->name('fotos');
 Route::get('orientador',          'ContentController@orientador')->name('orientador');
+Route::get('descargar/{file}',    'ContentController@descargar')->name('descargar');
 
 /*
 |--------------------------------------------------------------------------

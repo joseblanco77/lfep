@@ -76,8 +76,8 @@ $conferencias = itemsPortada('conferencias');
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h1>¿Tienes preguntas?</h1>
-            <h2>Puedes enviar tus preguntas a: info@lafamiliaesprioridad.com o llena nuestro <a href="#">fomulario de contacto</a></h2>
+            <h1>¿Tienes preguntas o un evento de parejas o familiar?</h1>
+            <h2>Puedes enviar tus consultas o invitaciones a conferencias familiares a: <a href="mailto:programa&#x40;lafamiliaesprioridad.com">programa&#x40;lafamiliaesprioridad.com</a> o llena nuestro <a href="{{ route('cajaverde.contacto') }}">fomulario de contacto</a></h2>
           </div>
         </div>
       </div>
