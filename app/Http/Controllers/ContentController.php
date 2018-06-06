@@ -43,7 +43,7 @@ class ContentController extends Controller
     {
         $item = Content::where('slug', $slug)->where('type', 'conferencias')->first();
 
-        $sidebar = Content::where('slug', '!=', $slug)->where('type', 'conferencias')->orderBy('id', 'desc')->get(['title', 'slug']);
+        $sidebar = Content::where('slug', '!=', $slug)->where('type', 'conferencias')->orderBy('id', 'asc')->get(['title', 'slug']);
 
         return view('conferencias')
             ->with(compact('item', 'sidebar'));

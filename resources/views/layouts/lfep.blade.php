@@ -30,6 +30,9 @@ $conferencias = itemsPortada('conferencias');
           </div>
           <div class="collapse navbar-collapse justify-content-end" id="navbar">
             <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('home') }}" role="button">Inicio</a>
+                </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">¿Quienes Somos?</a>
                 <div class="dropdown-menu">
@@ -38,6 +41,7 @@ $conferencias = itemsPortada('conferencias');
                         @endforeach
                 </div>
               </li>
+              {{--
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cápsula Radial</a>
                 <div class="dropdown-menu">
@@ -46,6 +50,7 @@ $conferencias = itemsPortada('conferencias');
                         @endforeach
                 </div>
               </li>
+              --}}
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Conferencias y Seminarios</a>
                 <div class="dropdown-menu">
