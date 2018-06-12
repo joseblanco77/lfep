@@ -20,6 +20,14 @@ a:hover {
   background-color: #fa690f;
   border-color: #fa690f;
 }
+.btn-primary, .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active {
+  color: #fff;
+  background-color: #fa690f;
+  border-color: #fa690f;
+}
+.btn-link, .btn-link:hover {
+  color: #fa690f;
+}
 /* Header */
 header {
   padding-bottom: 15px;
@@ -109,4 +117,28 @@ blockquote.blockquote {
   color: #999;
   text-align: center;
   border-top: .05rem solid #e5e5e5;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar-header {
+    margin-left: auto !important;
+  }
+  .navbar-collapse.collapsing .nav, .navbar-collapse.show .nav {
+    margin: 0;
+  }
+  .navbar-collapse.collapsing li.nav-item a, .navbar-collapse.show li.nav-item a {
+    text-align: right !important;
+    padding-right: 5px;
+  }
+  #askAnything h1 {
+    font-size: 1.7rem;
+  }
+  #askAnything h2 {
+    width: auto;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .table tbody tr td iframe {
+    width: 100% !important;
+  }
 }

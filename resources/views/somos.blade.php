@@ -18,7 +18,7 @@
             <h4 class="font-italic">¿Quiénes somos?</h4>
             <ol class="list-unstyled mb-0">
                 @foreach($sidebar as $link)
-                <li><a href="{{ route('audio', $link->slug) }}">{{ str_replace('Serie ', '', $link->title) }}</a></li>
+                <li><a href="{{ route('somos', $link->slug) }}">{{ str_replace('Serie ', '', $link->title) }}</a></li>
                 @endforeach
 
             </ol>

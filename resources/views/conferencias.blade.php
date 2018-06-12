@@ -18,7 +18,7 @@
             <h4 class="font-italic">Conferencias y Seminarios</h4>
             <ol class="list-unstyled mb-0">
                 @foreach($sidebar as $link)
-                <li><a href="{{ route('audio', $link->slug) }}">{{ str_replace('Serie ', '', $link->title) }}</a></li>
+                <li><a href="{{ route('conferencias', $link->slug) }}">{{ str_replace('Serie ', '', $link->title) }}</a></li>
                 @endforeach
 
             </ol>

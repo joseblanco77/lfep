@@ -25,11 +25,11 @@ $conferencias = itemsPortada('conferencias');
         <nav class="col12 col-md-9 navbar navbar-expand-lg">
           <div class="navbar-header">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" style="background-image:url(https://cdn4.iconfinder.com/data/icons/tupix-1/30/list-128.png)"></span>
+              <span class="navbar-toggler-icon" style="background-image:url(/lfep/imgs/menu.png)"></span>
             </button>
           </div>
           <div class="collapse navbar-collapse justify-content-end" id="navbar">
-            <ul class="nav nav-pills nav-fill">
+            <ul class="nav navbar-nav nav-pills nav-fill">
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('home') }}" role="button">Inicio</a>
                 </li>
@@ -82,7 +82,7 @@ $conferencias = itemsPortada('conferencias');
         <div class="row">
           <div class="col-md-12 text-center">
             <h1>¿Tienes preguntas o un evento de parejas o familiar?</h1>
-            <h2>Puedes enviar tus consultas o invitaciones a conferencias familiares a: <a href="mailto:programa&#x40;lafamiliaesprioridad.com">programa&#x40;lafamiliaesprioridad.com</a> o llena nuestro <a href="{{ route('cajaverde.contacto') }}">fomulario de contacto</a></h2>
+            <h2>Puedes enviar tus consultas o invitaciones a conferencias familiares a: <a href="mailto:programa&#x40;lafamiliaesprioridad.com">programa&#x40;lafamiliaesprioridad.com</a>, llena nuestro <a href="{{ route('cajaverde.contacto') }}">fomulario de contacto</a> o <a href="https://www.facebook.com/victor.suchite" target="_blank">encuentranos en Facebook</a></h2>
           </div>
         </div>
       </div>
