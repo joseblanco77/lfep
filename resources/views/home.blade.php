@@ -66,7 +66,7 @@ $articulos = [
                 <p class="card-text mb-auto">Extractos de las conferencias "Consejos para fortalecer su matrimonio" y "Excelencia en la Familia".</p>
                 <a href="{{ route('video') }}" class="answerLink">Ver vídeos</a>
               </div>
-              <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" style="width: auto; height: 200px;" src="{{ asset('lfep/imgs/conferencias.png') }}" data-holder-rendered="true">
+              <img class="card-img-right flex-auto d-none d-md-block" alt="Thumbnail [200x250]" style="width: auto; height: 200px;" src="{{ asset('lfep/imgs/consejero.jpg') }}" data-holder-rendered="true">
             </div>
           </div>
           <div class="col-lg-6 col-md-12">
