@@ -9,3 +9,5 @@
 - php artisan cajaverde:user-permissions-seeder
 - php artisan module:seed Paginas
 - php artisan cajaverde:paginas-permissions-seeder
+- php artisan module:seed Contacto
+- php artisan cajaverde:contacto-permissions-seeder

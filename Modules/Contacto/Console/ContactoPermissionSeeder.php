@@ -40,13 +40,18 @@ class ContactoPermissionsSeeder extends Command
      */
     public function handle()
     {
-        $adminForms = CajaverdeUser::where('email', 'suchitevictor@yahoo.es')->first();
+        $adminForms = CajaverdeUser::where('email', 'soporte@grupoperinola.com')->first();
         $adminForms->assignRole(['admin_contact_forms']);
         $this->info('Permisos adminForms asignados al usuario ' . $adminForms->email);
         
-        $adminForms = CajaverdeUser::where('email', 'joseblanco77@gmail.com')->first();
-        $adminForms->assignRole(['admin_contact_forms']);
-        $this->info('Permisos adminForms asignados al usuario ' . $adminForms->email);
+        $editForms = CajaverdeUser::where('email', 'jose.blanco@grupoperinola.com')->first();
+        $editForms->assignRole(['editor_contact_forms']);
+        $this->info('Permisos editForms asignados al usuario ' . $editForms->email);
+        
+        $viewForms = CajaverdeUser::where('email', 'javier.meza@grupoperinola.com')->first();
+        $viewForms->assignRole(['checker_contact_forms']);
+        $this->info('Permisos viewForms asignados al usuario ' . $viewForms->email);
+        
     }
 
     /**

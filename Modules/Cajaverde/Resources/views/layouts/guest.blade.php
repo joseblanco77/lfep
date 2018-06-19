@@ -8,9 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="{{ asset('admin/css/vendor.css') }}">
+        <link rel="stylesheet" href="{{ asset('admintpl/css/vendor.css') }}">
         <!-- Theme initialization -->
-        <link rel="stylesheet" href="{{ asset('admin/css/app-blue.css') }}">
+        <link rel="stylesheet" href="{{ asset('admintpl/css/app-blue.css') }}">
     </head>
     <body>
         <div class="auth">
@@ -26,7 +26,7 @@
                 <div class="color-secondary"></div>
             </div>
         </div>
-        <script src="{{ asset('admin/js/vendor.js') }}"></script>
-        <script src="{{ asset('admin/js/app.js') }}"></script>
+        <script src="{{ asset('admintpl/js/vendor.js') }}"></script>
+        <script src="{{ asset('admintpl/js/app.js') }}"></script>
     </body>
 </html>                

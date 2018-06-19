@@ -26,4 +26,22 @@ class CajaverdeContactoFormularios extends Model
             'formulario_id'
         );
     }
+
+    public function getCreatedAtAttribute($value)
+    {
+        if (!$value) {
+            return null;
+        }
+
+        return Carbon::parse($value)->format('d-m-Y H:i:s');
+    }
+
+    public function getUpdatedAtAttribute($value)
+    {
+        if (!$value) {
+            return null;
+        }
+
+        return Carbon::parse($value)->format('d-m-Y H:i:s');
+    }
 }

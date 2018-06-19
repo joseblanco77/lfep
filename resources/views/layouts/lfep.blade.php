@@ -82,7 +82,7 @@ $conferencias = itemsPortada('conferencias');
         <div class="row">
           <div class="col-md-12 text-center">
             <h1>¿Tienes preguntas o un evento de parejas o familiar?</h1>
-            <h2>Puedes enviar tus consultas o invitaciones a conferencias familiares a: <a href="mailto:programa&#x40;lafamiliaesprioridad.com">programa&#x40;lafamiliaesprioridad.com</a>, llena nuestro <a href="{{ route('cajaverde.contacto') }}">fomulario de contacto</a> o <a href="https://www.facebook.com/victor.suchite" target="_blank">encuentranos en Facebook</a></h2>
+            <h2>Puedes enviar tus consultas o invitaciones a conferencias familiares a: <a href="mailto:programa&#x40;lafamiliaesprioridad.com">programa&#x40;lafamiliaesprioridad.com</a>, llena nuestro <a href="{{ route('cajaverde.contacto') }}">fomulario de contacto</a> o <a href="https://www.facebook.com/victor.suchite" target="_blank">encuéntranos en Facebook</a></h2>
           </div>
         </div>
       </div>

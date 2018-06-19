@@ -35,7 +35,7 @@ if (!function_exists('getCajaverdeAvatar') ) {
         }
 
         $number = rand(0, 9);
-        $avatar = asset('admin/img/avatars/'.$number.'.jpg');
+        $avatar = asset('admintpl/img/avatars/'.$number.'.jpg');
         $avatars[$usuario->id] = $avatar;
         session(['cajaverde.avatars' => $avatars]);
 

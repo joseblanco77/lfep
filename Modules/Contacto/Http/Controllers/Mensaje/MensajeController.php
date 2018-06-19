@@ -5,6 +5,7 @@ namespace Modules\Contacto\Http\Controllers\Mensaje;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
+use Modules\Contacto\Entities\CajaverdeContactoMensajes;
 use Modules\Contacto\Repositories\CajaverdeContactoMensajesRepository;
 
 class MensajeController extends Controller
@@ -16,7 +17,7 @@ class MensajeController extends Controller
         $this->cajaverdeContactoMensajesRepository = $cajaverdeContactoMensajesRepository;
     }
 
-    
+
     /**
      * Display a listing of the resource.
      * @return Response
@@ -26,16 +27,19 @@ class MensajeController extends Controller
         $mensajes = $this->cajaverdeContactoMensajesRepository
             ->orderBy('created_at', 'desc')
             ->all();
-            
-        return view('contacto::mensaje.index');
+
+        return view('contacto::mensaje.index')
+            ->with(compact('mensajes'));
     }
 
     /**
      * Show the specified resource.
      * @return Response
      */
-    public function show()
+    public function show(CajaverdeContactoMensajes $mensaje)
     {
-        return view('contacto::mensaje.show');
+        debug($mensaje, $mensaje->payload);
+        return view('contacto::mensaje.show')
+            ->with(compact('mensaje'));
     }
 }
