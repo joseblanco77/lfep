@@ -58,7 +58,7 @@ CREATE TABLE `cajaverde_contacto_emails` (
   PRIMARY KEY (`id`),
   KEY `cajaverde_contacto_emails_formulario_id_index` (`formulario_id`),
   CONSTRAINT `cajaverde_contacto_emails_formulario_id_foreign` FOREIGN KEY (`formulario_id`) REFERENCES `cajaverde_contacto_formularios` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +67,7 @@ CREATE TABLE `cajaverde_contacto_emails` (
 
 LOCK TABLES `cajaverde_contacto_emails` WRITE;
 /*!40000 ALTER TABLE `cajaverde_contacto_emails` DISABLE KEYS */;
-INSERT INTO `cajaverde_contacto_emails` VALUES (1,'programa@lafamiliaesprioridad.com','to',1,NULL,NULL);
+INSERT INTO `cajaverde_contacto_emails` VALUES (1,'programa@lafamiliaesprioridad.com','to',1,NULL,NULL),(2,'victorsuchite@lafamiliaesprioridad.com','to',2,'2018-06-20 20:20:52','2018-06-20 20:20:52');
 /*!40000 ALTER TABLE `cajaverde_contacto_emails` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -93,7 +93,7 @@ CREATE TABLE `cajaverde_contacto_formulario_campo` (
   KEY `cajaverde_contacto_formulario_campo_campo_id_index` (`campo_id`),
   CONSTRAINT `cajaverde_contacto_formulario_campo_campo_id_foreign` FOREIGN KEY (`campo_id`) REFERENCES `cajaverde_contacto_campos` (`id`) ON DELETE CASCADE,
   CONSTRAINT `cajaverde_contacto_formulario_campo_formulario_id_foreign` FOREIGN KEY (`formulario_id`) REFERENCES `cajaverde_contacto_formularios` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,7 +102,7 @@ CREATE TABLE `cajaverde_contacto_formulario_campo` (
 
 LOCK TABLES `cajaverde_contacto_formulario_campo` WRITE;
 /*!40000 ALTER TABLE `cajaverde_contacto_formulario_campo` DISABLE KEYS */;
-INSERT INTO `cajaverde_contacto_formulario_campo` VALUES (1,1,1,'Nombre completo','Para tomar en serio tu mensaje, debemos saber quién eres.',NULL,1,NULL,NULL),(2,1,3,'Correo electrónico','Dirección para darle seguimiento al tu mensaje.',NULL,1,NULL,NULL),(3,1,1,'Teléfono','¿Necesitas que te llamemos? Deja tu número.',NULL,0,NULL,NULL),(4,1,2,'Mensaje','Tus comentarios son muy importantes para nosotros.',NULL,1,NULL,NULL),(5,1,4,'¿Es necesario que te contactemos de vuelta?',NULL,'Sí, por favor|No, gracias|No lo tengo claro',0,NULL,NULL);
+INSERT INTO `cajaverde_contacto_formulario_campo` VALUES (1,1,1,'Nombre completo','Para tomar en serio tu mensaje, debemos saber quién eres.',NULL,1,NULL,NULL),(2,1,3,'Correo electrónico','Dirección para darle seguimiento al tu mensaje.',NULL,1,NULL,NULL),(3,1,1,'Teléfono','¿Necesitas que te llamemos? Deja tu número.',NULL,0,NULL,NULL),(4,1,2,'Mensaje','Tus comentarios son muy importantes para nosotros.',NULL,1,NULL,NULL),(5,1,4,'¿Es necesario que te contactemos de vuelta?',NULL,'Sí, por favor|No, gracias|No lo tengo claro',0,NULL,NULL),(6,2,1,'Nombre de la emisora',NULL,NULL,1,'2018-06-20 20:27:35','2018-06-20 20:27:35'),(7,2,1,'Frecuencia Radial',NULL,NULL,1,'2018-06-20 20:27:53','2018-06-20 20:27:53'),(8,2,4,'Banda',NULL,'AM|FM|Internet',1,'2018-06-20 20:28:23','2018-06-20 20:28:52'),(9,2,1,'Ciudad y País',NULL,NULL,1,'2018-06-20 20:52:23','2018-06-20 20:52:23'),(10,2,1,'Persona de contacto',NULL,NULL,1,'2018-06-20 20:52:31','2018-06-20 20:52:31'),(11,2,1,'Posición que ocupa',NULL,NULL,1,'2018-06-20 20:52:47','2018-06-20 20:52:47'),(12,2,1,'Frecuencia en que se transmitirá el programa','Intervalo aproximado de tiempo',NULL,1,'2018-06-20 20:53:33','2018-06-20 20:53:33'),(13,2,1,'Horario(s) en que se transmitirá el programa',NULL,NULL,1,'2018-06-20 20:53:47','2018-06-20 20:53:47'),(14,2,1,'Dirección postal de la emisora',NULL,NULL,0,'2018-06-20 20:54:00','2018-06-20 20:54:00'),(15,2,1,'Teléfono(s)',NULL,NULL,1,'2018-06-20 20:54:14','2018-06-20 20:54:14'),(16,2,1,'Página web',NULL,NULL,0,'2018-06-20 20:54:29','2018-06-20 20:54:29'),(17,2,3,'Correo electrónico',NULL,NULL,1,'2018-06-20 20:54:40','2018-06-20 20:54:40');
 /*!40000 ALTER TABLE `cajaverde_contacto_formulario_campo` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -126,7 +126,7 @@ CREATE TABLE `cajaverde_contacto_formularios` (
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `cajaverde_contacto_formularios_slug_unique` (`slug`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -135,7 +135,7 @@ CREATE TABLE `cajaverde_contacto_formularios` (
 
 LOCK TABLES `cajaverde_contacto_formularios` WRITE;
 /*!40000 ALTER TABLE `cajaverde_contacto_formularios` DISABLE KEYS */;
-INSERT INTO `cajaverde_contacto_formularios` VALUES (1,'Contáctenos','Formulario de contacto principal','formulario','Haz recibido un mensaje de tu sitio','Si tienes un comentario o pregunta, escríbenos. De ser necesario, pronto recibirás respuesta de nuestro personal.',1,1,NULL,NULL);
+INSERT INTO `cajaverde_contacto_formularios` VALUES (1,'Contáctenos','Formulario de contacto principal','formulario','Haz recibido un mensaje de tu sitio','Si tienes un comentario o pregunta, escríbenos. De ser necesario, pronto recibirás respuesta de nuestro personal.',1,1,NULL,NULL),(2,'Registro de emisoras','Registro de emisoras','registro-de-emisoras','Registro de emisoras','Si desea envíos a través de UPS o FedEx, proporcione su número de cuenta con dichas agencias, el costo lo cubre la estación. “La Familia es Prioridad” no paga por este tipo de servicio.',1,1,'2018-06-20 18:54:47','2018-06-20 18:54:47');
 /*!40000 ALTER TABLE `cajaverde_contacto_formularios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -154,7 +154,7 @@ CREATE TABLE `cajaverde_contacto_mensajes` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -163,6 +163,7 @@ CREATE TABLE `cajaverde_contacto_mensajes` (
 
 LOCK TABLES `cajaverde_contacto_mensajes` WRITE;
 /*!40000 ALTER TABLE `cajaverde_contacto_mensajes` DISABLE KEYS */;
+INSERT INTO `cajaverde_contacto_mensajes` VALUES (1,'{\"encabezado\":{\"asunto\":\"Registro de emisoras\",\"titulo\":\"Registro de emisoras\",\"descripcion\":\"Registro de emisoras\"},\"campos\":{\"Nombre de la emisora\":\"Es una prueba de Jos\\u00e9 Blanco\",\"Frecuencia Radial\":\"102.5\",\"Banda\":\"FM\",\"Ciudad y Pa\\u00eds\":\"Mixco, Guatemala\",\"Persona de contacto\":\"Jos\\u00e9 Blanco\",\"Posici\\u00f3n que ocupa\":\"sadsadsa\",\"Frecuencia en que se transmitir\\u00e1 el programa\":\"asdsadsad\",\"Horario(s) en que se transmitir\\u00e1 el programa\":\"asdsadas\",\"Direcci\\u00f3n postal de la emisora\":\"asdasdas\",\"Tel\\u00e9fono(s)\":\"asdsadsad\",\"P\\u00e1gina web\":\"asdsadsa\",\"Correo electr\\u00f3nico\":\"asdsadsasda@kpkijhpijhpjpoi.com\"},\"mails\":{\"to\":[\"victorsuchite@lafamiliaesprioridad.com\"],\"cc\":[],\"bcc\":[]},\"user_agent\":\"Mozilla\\/5.0 (X11; Linux x86_64) AppleWebKit\\/537.36 (KHTML, like Gecko) Chrome\\/67.0.3396.79 Safari\\/537.36\",\"ip\":\"192.168.10.1\"}','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36','192.168.10.1','2018-06-20 21:12:02','2018-06-20 21:12:02');
 /*!40000 ALTER TABLE `cajaverde_contacto_mensajes` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -387,7 +388,7 @@ CREATE TABLE `cajaverde_sessions` (
 
 LOCK TABLES `cajaverde_sessions` WRITE;
 /*!40000 ALTER TABLE `cajaverde_sessions` DISABLE KEYS */;
-INSERT INTO `cajaverde_sessions` VALUES ('qLaquYqY9UDd6ioUqeaEe54NJoDIbPuP7HqO1ze2',NULL,'192.168.10.1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36','YTo0OntzOjY6Il90b2tlbiI7czo0MDoiR095ZE9VaERwRVE3d08zaFl0eHRFOVBnOEEyNTJhOVhYc1RuSWFwRiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NjA6Imh0dHA6Ly9sZmVwLmxvY2FsL2NvbmZlcmVuY2lhcy9hbGd1bm9zLXRlbWFzLWRlLWNvbmZlcmVuY2lhcyI7fXM6MjI6IlBIUERFQlVHQkFSX1NUQUNLX0RBVEEiO2E6MDp7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=',1528252402),('RDq3UZuuJEx00Zy2BRe58Wq4xqzsijdcf5kuonFk',NULL,'192.168.10.1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36','YTo0OntzOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czoxNzoiaHR0cDovL2xmZXAubG9jYWwiO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjY6Il90b2tlbiI7czo0MDoiSERXUVJMNUFyaGJGVjdZalN0amdRa0hoZlg1VVcwRDBlSGc0UHhoTiI7czoyMjoiUEhQREVCVUdCQVJfU1RBQ0tfREFUQSI7YTowOnt9fQ==',1529508307),('YLteK0DddfU2JEkKwOH5qGh5kUu6IMYyi3viR1bG',NULL,'192.168.10.1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36','YTo0OntzOjY6Il90b2tlbiI7czo0MDoiVHdnOWY3dXpuTnZvR1pwTjNrelJpODlQdlc0dUpuMUZJM3BoWVRDSCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MTc6Imh0dHA6Ly9sZmVwLmxvY2FsIjt9czoyMjoiUEhQREVCVUdCQVJfU1RBQ0tfREFUQSI7YTowOnt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319fQ==',1528083364);
+INSERT INTO `cajaverde_sessions` VALUES ('PuqAoDUq1twXRqqQQegXTEp3LcyCB08RETwxzWIm',1,'192.168.10.1','Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36','YTo2OntzOjk6Il9wcmV2aW91cyI7YToxOntzOjM6InVybCI7czozNDoiaHR0cDovL2xmZXAubG9jYWwvY29udGFjdG8vZW52aWFkbyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NjoiX3Rva2VuIjtzOjQwOiJIRFdRUkw1QXJoYkZWN1lqU3RqZ1FrSGhmWDVVVzBEMGVIZzRQeGhOIjtzOjM6InVybCI7YTowOnt9czo1NjoibG9naW5fY2FqYXZlcmRlXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjk6ImNhamF2ZXJkZSI7YToyOntzOjQ6InVzZXIiO2E6MTp7czo4OiJwcmV2aW91cyI7YToxMjp7czoyOiJpZCI7aToxO3M6Njoibm9tYnJlIjtzOjY6IlZpY3RvciI7czo4OiJhcGVsbGlkbyI7czo3OiJTdWNoaXRlIjtzOjU6ImVtYWlsIjtzOjIyOiJzdWNoaXRldmljdG9yQHlhaG9vLmVzIjtzOjg6InBhc3N3b3JkIjtzOjYwOiIkMnkkMTAkWXhQZnJsZU13MHZDaHlPM2FJOFpUdXNheHRVV0JlRFRDdzV5YWI1SXFMNUdzSjRDZG1GQTYiO3M6NjoiYXZhdGFyIjtOO3M6MTE6ImRlc2NyaXBjaW9uIjtzOjIxOiJQcm9waWV0YXJpbyBkZWwgc2l0aW8iO3M6NjoiYWN0aXZvIjtpOjE7czoxNDoicmVtZW1iZXJfdG9rZW4iO3M6NjA6IjMxbUY3WGdEVmhJc3FPaVRBYW5EcEFEOHNpOXNnV3JxczJPYVlQUGd0aURiTU16QmhFQ0Q0Z09iS1BnRyI7czo5OiJsb2dnZWRfYXQiO3M6MTk6IjIwMTgtMDYtMTkgMTY6MDQ6NTEiO3M6MTA6ImNyZWF0ZWRfYXQiO3M6MTk6IjIwMTgtMDUtMjcgMTA6NDg6MDMiO3M6MTA6InVwZGF0ZWRfYXQiO3M6MTk6IjIwMTgtMDYtMTkgMTY6MDQ6NTEiO319czo3OiJhdmF0YXJzIjthOjE6e2k6MTtzOjQ0OiJodHRwOi8vbGZlcC5sb2NhbC9hZG1pbnRwbC9pbWcvYXZhdGFycy85LmpwZyI7fX19',1529529123);
 /*!40000 ALTER TABLE `cajaverde_sessions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -450,7 +451,7 @@ CREATE TABLE `cajaverde_users` (
 
 LOCK TABLES `cajaverde_users` WRITE;
 /*!40000 ALTER TABLE `cajaverde_users` DISABLE KEYS */;
-INSERT INTO `cajaverde_users` VALUES (1,'Victor','Suchite','suchitevictor@yahoo.es','$2y$10$YxPfrleMw0vChyO3aI8ZTusaxtUWBeDTCw5yab5IqL5GsJ4CdmFA6',NULL,'Propietario del sitio',1,'31mF7XgDVhIsqOiTAanDpAD8si9sgWrqs2OaYPPgtiDbMMzBhECD4gObKPgG','2018-06-19 16:04:51','2018-05-27 16:48:03','2018-06-19 22:04:51'),(2,'José','Blanco','joseblanco77@gmail.com','$2y$10$akueR6gyT1RncRcatdL3KOXGwJSLvHhFml6ZbEkKkVmVrHwFIQSHG',NULL,'Desarrolador del sitio.',1,NULL,NULL,'2018-05-27 16:48:03','2018-05-27 16:48:03');
+INSERT INTO `cajaverde_users` VALUES (1,'Victor','Suchite','suchitevictor@yahoo.es','$2y$10$YxPfrleMw0vChyO3aI8ZTusaxtUWBeDTCw5yab5IqL5GsJ4CdmFA6',NULL,'Propietario del sitio',1,'31mF7XgDVhIsqOiTAanDpAD8si9sgWrqs2OaYPPgtiDbMMzBhECD4gObKPgG','2018-06-20 12:51:48','2018-05-27 16:48:03','2018-06-20 18:51:48'),(2,'José','Blanco','joseblanco77@gmail.com','$2y$10$akueR6gyT1RncRcatdL3KOXGwJSLvHhFml6ZbEkKkVmVrHwFIQSHG',NULL,'Desarrolador del sitio.',1,NULL,NULL,'2018-05-27 16:48:03','2018-05-27 16:48:03');
 /*!40000 ALTER TABLE `cajaverde_users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -663,4 +664,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-06-20  9:34:36
+-- Dump completed on 2018-06-20 15:12:24

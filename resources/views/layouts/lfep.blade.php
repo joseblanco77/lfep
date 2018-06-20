@@ -81,7 +81,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Programas para Emisoras</a>
                                 <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Solicitud de inscripción</a>
+                                    <a class="dropdown-item" href="{{ route('cajaverde.contacto', 'registro-de-emisoras') }}">Solicitud de inscripción</a>
                                     @foreach($audios as $item)
                                     <a class="dropdown-item" href="{{ route('audio', $item->slug) }}">{{ $item->title }}</a>
                                     @endforeach
