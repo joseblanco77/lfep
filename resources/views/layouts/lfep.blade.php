@@ -13,7 +13,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>La Familia Es Prioridad</title>
     <link rel="stylesheet" href="{{ asset('lfep/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('lfep/style.css') }}"> @yield('headlinks')
+    <link rel="stylesheet" href="{{ asset('lfep/style.css') }}"> 
+    <link rel="stylesheet" href="{{ asset('lfep/lfep.css') }}"> 
+    @yield('headlinks')
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-21870325-1"></script>
     <script>

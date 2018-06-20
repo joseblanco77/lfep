@@ -6,7 +6,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8 blog-main">
-          <div class="blog-post">
+          <div class="blog-post lfep-post">
             <h2 class="blog-post-title">{{ $post->title }}</h2>
             <h4 class="">Serie: {{ $post->subtitle }}</h4>
             <p class="blog-post-meta">{{ $post->created_at->format('d \d\e F \d\e Y') }}</p>
