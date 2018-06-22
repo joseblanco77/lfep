@@ -10,6 +10,7 @@
             <h2 class="blog-post-title">{{ $post->title }}</h2>
             <h4 class="">Serie: {{ $post->subtitle }}</h4>
             <p class="blog-post-meta">{{ $post->created_at->format('d \d\e F \d\e Y') }}</p>
+            <img src="{{ asset('images/familia_latina_1.jpg') }}" class="img-fluid" alt="Familia">
             <p>{!! $post->content !!}</p>
           </div><!-- /.blog-post -->
 
